@@ -1,8 +1,27 @@
 #!/bin/bash
 cd /home/diego
+
+### START SERVERS ###
 systemctl start mariadb
-systemctl start httpd
+
+# Opensuse
+systemctl start apache2
+
+# Fedora
+#systemctl start httpd
+
+# Fedora
 #systemctl start tomcat
+
+### CHECK SERVERS STATUS ###
+
 systemctl status mariadb
-systemctl status httpd
+
+# Opensuse
+systemctl status apache2
+
+# Fedora
+#systemctl status httpd
+
+# Fedora
 #systemctl status tomcat
